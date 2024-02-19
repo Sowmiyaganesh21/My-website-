@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $('#menu').click(function(){
         $(this).toggleClass('fa-times');
@@ -13,6 +14,8 @@ $(document).ready(function(){
             }
         })
     });
+
+   
     $(`a[href*="#"]`).on('click',function(e){
         e.preventDefault();
         $(`html,body`).animate({
@@ -21,3 +24,11 @@ $(document).ready(function(){
         );
     });
 });
+
+ let typed=new Typed(".auto-input",{
+        strings:["UI Designer","Motivator","Youtuber"],
+        typedSpeed:100,
+        backSpeed:100,
+        backDelay:2000,
+        loop:true,
+    });
